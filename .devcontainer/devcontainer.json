@@ -1,0 +1,22 @@
+{
+    "name": "Android Development",
+    "image": "mcr.microsoft.com/vscode/devcontainers/base:ubuntu",
+    "features": {
+      "ghcr.io/devcontainers/features/java:1": {
+        "version": "11"
+      }
+    },
+    "postCreateCommand": "sdkmanager --install 'platforms;android-30' 'build-tools;30.0.3' 'system-images;android-30;google_apis;x86_64' 'emulator' 'platform-tools'",
+    "customizations": {
+      "vscode": {
+        "extensions": [
+          "ms-vscode.vscode-typescript-next",
+          "vscjava.vscode-java-pack",
+          "ms-azuretools.vscode-docker",
+          "ms-vscode-remote.remote-containers",
+          "ms-androidtools.android-emulator"
+        ]
+      }
+    }
+  }
+  
